@@ -7,7 +7,7 @@ public class Hw2 {
         int stringLength = Integer.MAX_VALUE;
         String minString = "";
         Scanner sc = new Scanner(System.in);
-        System.out.println("Введите колличество слов:");
+        System.out.println("Введите количество слов:");
         int n = sc.nextInt();
         String[] array = new String[n];
         for (int i = 0; i < n; i++) {
