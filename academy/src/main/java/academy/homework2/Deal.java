@@ -16,9 +16,10 @@ public class Deal {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите количество игроков от 2 до 10: ");
         int players = sc.nextInt();
-        if (players < 2 && players > 10) {
+        if (players < 2 || players > 10) {
             System.out.println("Игра не состоится, количество игроков должно быть не менее 2 и не более 10 ");
-        }
+        } else {
+
         for (int i = 1; i <= players; i++) {
             System.out.print("У" + i + "-го игрока выпала следующая комбинация:");
             int j = 0;
@@ -34,7 +35,7 @@ public class Deal {
                     cart[mast][karta] = "";
                     j++;
                 }
-
+            }
             }
 
             System.out.println();
