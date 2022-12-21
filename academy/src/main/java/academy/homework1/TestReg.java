@@ -6,8 +6,7 @@ public class TestReg {
     static Pattern pattern = Pattern.compile("[!.;:,]");
 
     public static void main(String[] args) {
-        Scanner sc =
-                new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 
         Matcher matcher = pattern.matcher(sc.nextLine());
 
