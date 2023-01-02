@@ -1,13 +1,14 @@
-package homework3;
+package main.java.academy.homework3;
 
 public class Person {
     String name;
-    int money;
+    double money;
 
     public Person() {
 
     }
-    public Person(String name, int money){
+
+    public Person(String name, double money) {
         this.name = name;
         this.money = money;
     }
@@ -20,11 +21,11 @@ public class Person {
         this.name = name;
     }
 
-    public int getMoney() {
+    public double getMoney() {
         return money;
     }
 
-    public void setMoney(int money) {
+    public void setMoney(double money) {
         this.money = money;
     }
 }

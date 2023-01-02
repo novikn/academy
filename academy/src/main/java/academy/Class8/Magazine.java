@@ -34,9 +34,9 @@ public class Magazine implements Printable{
     public void print() {
         System.out.println("Magazine" + name + month);
     }
-    public static void printBook(Printable [] printable){
+    public static void printMagazine(Printable [] printable){
         for (Printable p: printable ){
-            if (p instanceof Book){
+            if (p instanceof Magazine){
                 p.print();
 
             }

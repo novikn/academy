@@ -2,7 +2,7 @@ package main.java.academy.Class8;
 
 public class TestBook {
     public static void main(String[] args) {
-        Printable array[] = new Printable[5];
+        Printable  []array = new Printable[5];
         array[0] = new Book("Колобок");
         array[1] = new Book("Колобок1");
         array[2] = new Book("Колобок3");

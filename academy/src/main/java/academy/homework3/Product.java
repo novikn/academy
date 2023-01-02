@@ -1,15 +1,16 @@
-package homework3;
+package main.java.academy.homework3;
 
-public abstract  class Product {
-    private double price;
+public abstract class Product {
+    protected double price;
     protected String name;
-    public double quantity;
+    protected double quantity;
 
     public Product() {
-
+        super();
     }
 
     public Product(String name, double price) {
+        super();
         this.price = price;
         this.name = name;
     }
@@ -22,11 +23,13 @@ public abstract  class Product {
     public double calcPrice() {
         return price * quantity;
     }
-protected abstract double getDiscount();
-    public double calcFinalPrice(){
-        return quantity*price*getDiscount();
-   // public double discount() {
-      //  return 1;
+
+    protected abstract double getDiscount();
+
+    public double calcFinalPrice() {
+        return quantity * price * getDiscount();
+        // public double discount() {
+        //  return 1;
     }
 
 
