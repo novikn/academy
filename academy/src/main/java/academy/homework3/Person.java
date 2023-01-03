@@ -1,6 +1,9 @@
 package main.java.academy.homework3;
 
+import java.time.LocalDate;
+
 public class Person {
+    LocalDate dateOfBirth;
     String name;
     double money;
 
@@ -27,5 +30,13 @@ public class Person {
 
     public void setMoney(double money) {
         this.money = money;
+    }
+
+    public LocalDate getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(LocalDate dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 }

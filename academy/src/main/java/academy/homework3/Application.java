@@ -1,5 +1,6 @@
 package main.java.academy.homework3;
 
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Application {
@@ -83,6 +84,13 @@ public class Application {
         System.out.println("Введите сумму наличных у продавца: ");
         double money = sc.nextDouble();
         seller = new Seller(name, money);
+        System.out.println("Введите ДР продавца: ");
+        String birthDay = sc.next();
+        if (DateValidator.matchesSlashDate(birthDay)
+                || DateValidator.matchesDashDate(birthDay)) {
+            LocalDate birth = DateValidator.getLocalDate(birthDay);
+            seller.setDateOfBirth(birth);
+        } else System.out.println("Некорректная дата рождения!");
         deal.setSeller(seller);
     }
 

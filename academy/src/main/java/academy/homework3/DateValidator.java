@@ -27,7 +27,7 @@ public abstract class DateValidator {
             return LocalDate.parse(date, DateTimeFormatter.ofPattern("dd-MM-yyyy"));
         else if (matchesSlashDate(date).equals(Boolean.TRUE))
             return LocalDate.parse(date, DateTimeFormatter.ofPattern("dd/MM/yyyy"));
-        return LocalDate.now();
+        return null;
     }
 
     public static Boolean matchesDashDate(String date) {
